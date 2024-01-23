@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
-import HeroSection from "../components/HeroSection";
-import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full fixed top-0 left-0 right-0 mx-auto">
+      <header className="w-full fixed top-0 left-0 right-0  container mx-auto text-xl">
         <nav className={`py-4 md:px-12 px-4 bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
           <div className="flex items-center justify-between">
             <div className="text-black font-bold text-lg cursor-pointer">
