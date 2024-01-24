@@ -14,8 +14,8 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full fixed top-0 left-0 right-0  container mx-auto text-xl">
-        <nav className={`py-4 md:px-12 px-4 bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
+      <header className="w-full fixed top-0 left-0 right-0  container mx-auto text-xl ">
+        <nav className={`py-4 md:px-12  bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
           <div className="flex items-center justify-between">
             <div className="text-black font-bold text-lg cursor-pointer">
               {/* <Image src={logo} alt="" className="h-10" /> */}
