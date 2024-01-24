@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
+import Clock from "react-live-clock";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
