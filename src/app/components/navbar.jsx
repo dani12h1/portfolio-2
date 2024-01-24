@@ -18,7 +18,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <div className="text-black font-bold text-lg cursor-pointer">
               {/* <Image src={logo} alt="" className="h-10" /> */}
-              <h2>LOGO</h2>
+              <h2>
+                Daniel<br></br>Nygaard
+              </h2>
             </div>
 
             {/* for larger device */}
