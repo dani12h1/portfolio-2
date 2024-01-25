@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import Clock from "react-live-clock";
+import Image from "next/image";
+import Logo from "../assets/logo.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +21,9 @@ const Navbar = () => {
         <nav className={`py-4  bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
           <div className="flex items-center justify-between">
             <div className="text-black font-bold text-lg cursor-pointer">
-              {/* <Image src={logo} alt="" className="h-10" /> */}
-              <h2>
-                Daniel<br></br>Nygaard
-              </h2>
+              <Link href="/">
+                <Image src={Logo} alt="" className="w-12" />
+              </Link>
             </div>
 
             {/* for larger device */}
@@ -34,7 +36,11 @@ const Navbar = () => {
 
             {/* contact me btn */}
             <div className="lg:block hidden">
-              <button className="px-4 py-2 bg-[#6366F1] hover:bg-[#6366F4] border text-white rounded hover:bg-primary hover:text-black transition-all duration-300">Theme</button>
+              <button className="px-4 py-2 bg-gray-200 hover:bg-gray-400 border text-white rounded-lg hover:bg-primary  transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="black" class="bi bi-moon" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
+                </svg>
+              </button>
             </div>
 
             {/* btn for small devices */}
