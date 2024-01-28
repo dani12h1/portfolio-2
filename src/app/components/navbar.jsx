@@ -28,7 +28,9 @@ const Navbar = () => {
 
             {/* for larger device */}
             <div className="lg:flex items-center gap-3 hidden text-body">
-              <a className="block text-black  hover:text-gray-400 py-2 px-4 cursor-pointer">About me</a>
+              <a href="/about" className="block text-black  hover:text-gray-400 py-2 px-4 cursor-pointer">
+                About me
+              </a>
               <a href="https://www.linkedin.com/in/danielnygaardc/" className="block py-2 px-4 cursor-pointer text-black">
                 Linkedin
               </a>

@@ -2,7 +2,7 @@ import { projectsData } from "../../data/projectsData";
 import Image from "next/image";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
-import placeholder from "../../assets/logo.png";
+import ciff from "../../assets/ciff.png";
 export default function ProjectList({ params }) {
   // Find projektet med det matchende id fra params
   const selectedProject = projectsData.find((project) => project.id === parseInt(params.id));
@@ -38,9 +38,9 @@ export default function ProjectList({ params }) {
               </div>
             </div>
             <div className="flex flex-col md:gap-4 lg:gap-8 gap-6 pb-14 lg:flex-row lg:mx-auto">
-              <Image className="rounded-sm lg:w-[32%] w-[100%] h-auto " src={placeholder} alt="placeholder"></Image>
-              <Image className="rounded-sm lg:w-[32%] w-[100%] h-auto " src={placeholder} alt="placeholder"></Image>
-              <Image className="rounded-sm lg:w-[32%] w-[100%] h-auto " src={placeholder} alt="placeholder"></Image>
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
             </div>
 
             <div className="lg:grid grid-cols-3 gap-8">
