@@ -3,10 +3,14 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import logo from "../assets/logo.png";
+import Footer from "../components/Footer";
 
 function about() {
   return (
     <>
+      <Head>
+        <title>About me</title>
+      </Head>
       <Navbar />
       <section className="mt-72 container mx-auto">
         <div className="lg:flex gap-44 justify-center ">
