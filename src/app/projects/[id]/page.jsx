@@ -4,10 +4,10 @@ import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
 import placeholder from "../../assets/logo.png";
 export default function ProjectList({ params }) {
-  // Find the project with the matching id from the params
+  // Find projektet med det matchende id fra params
   const selectedProject = projectsData.find((project) => project.id === parseInt(params.id));
 
-  // If the project with the given id is not found, you can handle it accordingly
+  // Hvis id ikke findes:
   if (!selectedProject) {
     return <div>Project not found</div>;
   }
