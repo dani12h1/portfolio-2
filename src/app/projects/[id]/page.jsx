@@ -38,9 +38,9 @@ export default function ProjectList({ params }) {
               </div>
             </div>
             <div className="flex flex-col md:gap-4 lg:gap-8 gap-6 pb-14 lg:flex-row lg:mx-auto">
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={ciff} alt="placeholder"></Image>
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image1.src} alt="Project" />
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
             </div>
 
             <div className="lg:grid grid-cols-3 gap-8">

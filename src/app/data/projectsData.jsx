@@ -1,3 +1,7 @@
+import hogwarts from "../assets/hogwarts-mac.png";
+import pansy from "../assets/pansy.png";
+import hackgrid from "../assets/hackgrid.png";
+
 export const projectsData = [
   {
     id: 1,
@@ -13,12 +17,15 @@ export const projectsData = [
           techs: ["HTML, CSS, JavaScript, AdobeXD"],
         },
       ],
-      objective: "You have been hired as the frontender for Hogwarts School of Witchcraft and Wizardry, to build a system to help the administrators handle student lists. As test-data you are giventhe students from the infamous class of 1991.",
-      image: {
-        src: "https://images.unsplash.com/photo-1517849845537-4d257902454a",
-        alt: "Hogwarts images",
-        width: "500",
-        height: "500",
+
+      image1: {
+        src: hogwarts,
+      },
+      image2: {
+        src: pansy,
+      },
+      image3: {
+        src: hackgrid,
       },
     },
   },
