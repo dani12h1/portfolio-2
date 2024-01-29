@@ -2,7 +2,7 @@ import { projectsData } from "../../data/projectsData";
 import Image from "next/image";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
-import ciff from "../../assets/ciff.png";
+import Head from "next/head";
 export default function ProjectList({ params }) {
   // Find projektet med det matchende id fra params
   const selectedProject = projectsData.find((project) => project.id === parseInt(params.id));
@@ -16,12 +16,15 @@ export default function ProjectList({ params }) {
 
   return (
     <>
+      <Head>
+        <title>{content.alt}</title>
+      </Head>
       <body>
         <Navbar />
-        <div className="flex container mx-auto pt-36">
+        <div className="flex container mx-auto pt-36 mb-10">
           <section className="">
             <h1 className="pb-4">{content.heading}</h1>
-            <div className="flex self-center gap-6 pb-10">
+            <div className="flex self-center lg:gap-6 gap-3 pb-10">
               <div className="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
                   <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
@@ -46,8 +49,10 @@ export default function ProjectList({ params }) {
             <div className="lg:grid grid-cols-3 gap-8">
               <div className="col-span-1">
                 <h3>Website:</h3>
-                <p className="pb-4 ">{content.website}</p>
-                <h3>Tools & Technologies</h3>
+                <a href={content.website} className="hover:text-lilla">
+                  {content.alt}
+                </a>
+                <h3 className="pt-4">Tools & Technologies</h3>
                 <ul className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (
                     <li key={index}>{tech}</li>

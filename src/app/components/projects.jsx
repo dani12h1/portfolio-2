@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import ciff from "../assets/ciff.png";
-import hogwarts from "../assets/hogwarts.png";
-import edc from "../assets/edc.png";
-import dashboard from "../assets/dashboard.png";
+import ciff from "../assets/ciff2.png";
+import hogwarts from "../assets/hackgrid.png";
+import edc from "../assets/edc2.png";
+import dashboard from "../assets/dashboard2.png";
 
 function projects() {
   return (
@@ -17,14 +17,14 @@ function projects() {
             <p>Case</p>
           </div>
         </a>
-        <a href="/projects/2" className="shadow-2xl rounded-lg mx-4">
+        <a href="/projects/3" className="shadow-2xl rounded-lg mx-4">
           <Image className="rounded-t-lg object-cover" src={ciff} width={600} height={600} alt="Picture of workers" />
           <div className="p-6 text-center">
             <h3 className="font-bold">Copenhagen Fashion Fair</h3>
             <p>Registration form</p>
           </div>
         </a>
-        <a href="/projects/3" className="shadow-2xl rounded-lg mx-4">
+        <a href="/projects/2" className="shadow-2xl rounded-lg mx-4">
           <Image className="rounded-t-lg object-cover " src={edc} width={600} height={600} alt="Picture of workers" />
           <div className="p-6 text-center">
             <h3 className="font-bold">EDC</h3>

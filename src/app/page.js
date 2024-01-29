@@ -8,9 +8,6 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Portfolio</title>
-      </Head>
       <body className="">
         <Navbar />
         <HeroSection />
