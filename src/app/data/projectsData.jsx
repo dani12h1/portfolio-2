@@ -23,7 +23,7 @@ export const projectsData = [
       heading: "Hogwarts Student List",
       publishDate: "Mar 8, 2023",
       tags: "Case",
-      text: "You have been hired as the frontender for Hogwarts School of Witchcraft and Wizardry, to build a system to help the administrators handle student lists. As test-data you are giventhe students from the infamous class of 1991. First, you are just asked to provide an interface to show the list, sort by firstname, lastname, or house, as well as filter by house. Also the interface must provide a popup window with detailed information about each student, including photo and house-crestand colors. As you sort your assignment, you are asked to expand on the solution - the administratormust be able to expel individual students, and see a list of expelled students. On a lessdramatic note, two students from each house can be selected as prefects, and this shouldshow in their popup. Then the customer experiences a massive shift in political view, and you are bombardedwith additional requirements. In addition to prefects, some students can be appointed tojoin the inquisitorial squad. You are also tasked with implementing racial profi ling, byadding blood-status to each student - something the original data doesn't have, so youneed to devise an algorithm for fi guring out a students heritage based on lists of family-names. You grow a bit tired of these new modifi cations, so you decide to hack the system. First youwant to infiltrate the school, so you inject yourself in the list of students (in the house ofyour choice), and make sure that you can't be expelled by the administrator.",
+      text: "You have been hired as the frontender for Hogwarts School of Witchcraft and Wizardry, to build a system to help the administrators handle student lists. As test-data you are given the students from the infamous class of 1991. First, you are just asked to provide an interface to show the list, sort by firstname, lastname, or house, as well as filter by house. Also the interface must provide a popup window with detailed information about each student, including photo and house-crestand colors. As you sort your assignment, you are asked to expand on the solution - the administratormust be able to expel individual students, and see a list of expelled students. On a lessdramatic note, two students from each house can be selected as prefects, and this shouldshow in their popup. Then the customer experiences a massive shift in political view, and you are bombardedwith additional requirements. In addition to prefects, some students can be appointed tojoin the inquisitorial squad. You are also tasked with implementing racial profi ling, byadding blood-status to each student - something the original data doesn't have, so youneed to devise an algorithm for fi guring out a students heritage based on lists of family-names. You grow a bit tired of these new modifi cations, so you decide to hack the system. First you want to infiltrate the school, so you inject yourself in the list of students (in the house of your choice), and make sure that you can't be expelled by the administrator.",
       website: "https://dnygaard.dk/kea/Hogwarts/hogwarts_student_list/index.html",
       alt: "Hogwarts Student List",
       technologies: [
@@ -77,7 +77,18 @@ export const projectsData = [
       heading: "Copenhagen International Fashion Fair",
       publishDate: "Nov 3, 2023",
       tags: "Design / Web Application",
-      text: "In building the Copenhagen International Fashion Fair Registration Page, here's what I handled: <br/> Dynamic Routing Setup: I made sure there were four distinct registration forms for buyers, press, visitors, and exhibitors. Each form was tailored to gather the right info for each type of attendee.",
+      text: (
+        <>
+          <div>
+            <p>
+              As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page.
+              <br /> The registration form includes: <br /> <br />
+              <b>Dynamic Routing Setup:</b> Four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right info for each type of attendee.
+            </p>
+          </div>
+          <br />
+        </>
+      ),
       website: "https://ciff.strom.works/registration/buyer",
       alt: "CIFF website",
       technologies: [
