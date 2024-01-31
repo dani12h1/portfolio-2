@@ -60,13 +60,13 @@ export default function ProjectList({ params }) {
                 </ul>
               </div>
               <div className="col-span-2">
-                <h3>Challenge</h3>
+                <h3 className="font-extrabold">Challenge</h3>
                 <p className="pb-10">{content.text}</p>
               </div>
             </div>
           </section>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </>
   );
