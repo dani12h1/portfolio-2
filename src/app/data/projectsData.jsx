@@ -77,18 +77,8 @@ export const projectsData = [
       heading: "Copenhagen International Fashion Fair",
       publishDate: "Nov 3, 2023",
       tags: "Design / Web Application",
-      text: (
-        <>
-          <div>
-            <p>
-              As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page.
-              <br /> The registration form includes: <br /> <br />
-              <b>Dynamic Routing Setup:</b> Four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right info for each type of attendee.
-            </p>
-          </div>
-          <br />
-        </>
-      ),
+      text: " As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page. The registration form includes: Dynamic Routing Setup: Four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right information for each type of attendee.",
+
       website: "https://ciff.strom.works/registration/buyer",
       alt: "CIFF website",
       technologies: [
