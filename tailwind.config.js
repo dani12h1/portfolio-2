@@ -11,6 +11,8 @@ module.exports = {
         lilla: "#6366F1",
         hvid: "#ffff",
         sort: "#000000",
+        bg: "rgb(var(---primary-bg) / <alpha-value>)",
+        content: "rgb(var(---secondary-content) / <alpha-value>)",
       },
       container: {
         padding: {
