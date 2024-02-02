@@ -14,7 +14,7 @@
   @media (prefer-color-scheme: dark) {
     :root {
       --color-bg: 13, 36, 56;
-      --ccolor-content: 16, 45, 68;
+      --color-content: 16, 45, 68;
       /* --ternary-dark: 30, 56, 81; */
     }
   }
