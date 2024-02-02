@@ -8,9 +8,6 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        lilla: "#6366F1",
-        hvid: "#ffff",
-        sort: "#000000",
         bg: "rgb(var(--color-bg) / <alpha-value>)",
         content: "rgb(var(--color-content) / <alpha-value>)",
       },
