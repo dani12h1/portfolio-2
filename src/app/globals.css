@@ -5,22 +5,20 @@
 @layer base {
   :root {
     /* Light color scheme */
-    --color-bg: 0, 0, 0;
-    --color-content: 255, 255, 255;
-    /* --ternary-light: 246, 247, 248; */
+    --color-bkg: 255, 255, 255;
+    --color-content: 0, 0, 0;
   }
 
   /* Dark color scheme */
   @media (prefer-color-scheme: dark) {
     :root {
-      --color-bg: 13, 36, 56;
+      --color-bkg: 13, 36, 56;
       --color-content: 16, 45, 68;
-      /* --ternary-dark: 30, 56, 81; */
     }
   }
   :root [data-theme="dark"] {
-    --color-bg: 13, 36, 56;
-    --ccolor-content: 16, 45, 68;
+    --color-bkg: 16, 45, 68;
+    --color-content: 0, 0, 0;
   }
 }
 

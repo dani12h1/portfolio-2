@@ -7,7 +7,7 @@ import React from "react";
 function HeroSection() {
   return (
     <>
-      <section className="bg-color-bg text-color-content container mx-auto mb-24 flex flex-col lg:flex-row items-center justify-center mt-28 h-[75vh] gap-14">
+      <section className="bg-bkg text-content container mx-auto mb-24 flex flex-col lg:flex-row items-center justify-center mt-28 h-[75vh] gap-14">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }} className="order-1 lg:order-2">
           <Image className="lg:w-96 lg:h-auto" src={dev} alt="dev" />
         </motion.div>

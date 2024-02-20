@@ -105,9 +105,9 @@ export const projectsData = [
       heading: "CIFF Dashboard",
       publishDate: "Jul 26, 2021",
       tags: "Web Application",
-      text: "You have been hired as the frontender for Hogwarts School of Witchcraft and Wizardry, to build a system to help the administrators handle student lists. As test-data you are giventhe students from the infamous class of 1991. First, you are just asked to provide an interface to show the list, sort by firstname, lastname, or house, as well as filter by house. Also the interface must provide a popup window with detailed information about each student, including photo and house-crestand colors. As you sort your assignment, you are asked to expand on the solution - the administratormust be able to expel individual students, and see a list of expelled students. On a lessdramatic note, two students from each house can be selected as prefects, and this shouldshow in their popup. Then the customer experiences a massive shift in political view, and you are bombardedwith additional requirements. In addition to prefects, some students can be appointed tojoin the inquisitorial squad. You are also tasked with implementing racial profi ling, byadding blood-status to each student - something the original data doesn't have, so youneed to devise an algorithm for fi guring out a students heritage based on lists of family-names. You grow a bit tired of these new modifi cations, so you decide to hack the system. First youwant to infiltrate the school, so you inject yourself in the list of students (in the house ofyour choice), and make sure that you can't be expelled by the administrator.",
+      text: "Internal dashboard for Copenhagen International Fashion Fair. The dashboard incluces: Map where it's possible the add and remove stands to make an overview, ticket overview, check-in overview, data from different seasons ",
       website: "",
-      alt: "No website - intern infomation",
+      alt: "No website - internal infomation",
       technologies: [
         {
           techs: ["HTML, CSS, JavaScript, AdobeXD"],
