@@ -23,7 +23,7 @@ export default function ProjectList({ params }) {
         <Navbar />
         <div className="flex container mx-auto pt-36 mb-10">
           <section className="">
-            <h1 className="pb-4">{content.heading}</h1>
+            <h1 className="pb-4 ">{content.heading}</h1>
             <div className="flex self-center lg:gap-6 gap-3 pb-10">
               <div className="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
@@ -47,20 +47,22 @@ export default function ProjectList({ params }) {
             </div>
 
             <div className="lg:grid grid-cols-3 gap-8">
-              <div className="col-span-1">
-                <h3>Website:</h3>
-                <a href={content.website} className="hover:text-lilla">
+              <div className="col-span-1 ">
+                <h3 className="text-xl">Website:</h3>
+                <a href={content.website} className="hover:text-lilla text-lg">
                   {content.alt}
                 </a>
-                <h3 className="pt-4">Tools & Technologies</h3>
-                <ul className="pb-4">
+                <h3 className="pt-4 text-xl">Tools & Technologies</h3>
+                <div className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (
-                    <li key={index}>{tech}</li>
+                    <p className="text-lg" key={index}>
+                      {tech}
+                    </p>
                   ))}
-                </ul>
+                </div>
               </div>
               <div className="col-span-2">
-                <h3 className="font-extrabold">Challenge</h3>
+                <h3 className=" text-2xl">About the project</h3>
                 <p className="pb-10">{content.text}</p>
               </div>
             </div>

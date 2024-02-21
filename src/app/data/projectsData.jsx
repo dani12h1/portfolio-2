@@ -50,12 +50,12 @@ export const projectsData = [
       heading: "EDC - Find a buyer",
       publishDate: "May, 2023",
       tags: "Case",
-      text: "You have been hired as the frontender for Hogwarts School of Witchcraft and Wizardry, to build a system to help the administrators handle student lists. As test-data you are giventhe students from the infamous class of 1991. First, you are just asked to provide an interface to show the list, sort by firstname, lastname, or house, as well as filter by house. Also the interface must provide a popup window with detailed information about each student, including photo and house-crestand colors. As you sort your assignment, you are asked to expand on the solution - the administratormust be able to expel individual students, and see a list of expelled students. On a lessdramatic note, two students from each house can be selected as prefects, and this shouldshow in their popup. Then the customer experiences a massive shift in political view, and you are bombardedwith additional requirements. In addition to prefects, some students can be appointed tojoin the inquisitorial squad. You are also tasked with implementing racial profi ling, byadding blood-status to each student - something the original data doesn't have, so youneed to devise an algorithm for fi guring out a students heritage based on lists of family-names. You grow a bit tired of these new modifi cations, so you decide to hack the system. First youwant to infiltrate the school, so you inject yourself in the list of students (in the house ofyour choice), and make sure that you can't be expelled by the administrator.",
+      text: "The goal of this case is to help people who are thinking of selling their property (the seller) to get an idea of the market before they work with a real estate agent. This will help them understand the value of their property and the potential buyers in their area before beginning the process or engaging with an agent. If they find a potential buyer, EDC can start the process of contacting them and helping them sell their property.",
       website: "https://edc-case.vercel.app/",
       alt: "EDC case",
       technologies: [
         {
-          techs: ["HTML, CSS, JavaScript, AdobeXD"],
+          techs: ["CSS, Next.js, API, AdobeXD, design"],
         },
       ],
 
@@ -105,7 +105,7 @@ export const projectsData = [
       heading: "CIFF Dashboard",
       publishDate: "Aug, 2022",
       tags: "Web Application",
-      text: "Internal dashboard for Copenhagen International Fashion Fair. The dashboard incluces: Map overview, ticket overview, check-in overview, data from different seasons and more. ",
+      text: "Internal dashboard with data visualization for Copenhagen International Fashion Fair. The dashboard incluces: Map overview, ticket overview, check-in overview, data from different seasons and more. ",
       website: "",
       alt: "No website - internal infomation",
       technologies: [

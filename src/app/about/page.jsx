@@ -14,10 +14,11 @@ function about() {
       <Navbar />
       <section className="mt-72 container mx-auto">
         <div className="lg:flex gap-36 justify-center ">
-          <Image className="pb-10" src={me} alt="" width={250} height={200} />
+          <Image className="pb-10" src={me} alt="" width={350} height={300} />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br></br>
-            <br></br>Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?
+            Hi i&apos;m Daniel, a multimediadesigner dedicated to creating fun and innovative digital solutions.<br></br>
+            <br></br>
+            Through this portfolio, I invite you to explore my work and discover the different projects I&apos;ve had the privilege to be a part of. Thank you for visiting, and I look forward to the opportunity to collaborate and create something truly extraordinary together.
           </p>
         </div>
       </section>
