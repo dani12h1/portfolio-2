@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import Clock from "react-live-clock";
 import Image from "next/image";
-import Logo from "../assets/logo.png";
+// import Logo from "../assets/logo.png";
 import Link from "next/link";
 import ThemeToggler from "../components/ThemeToggler";
 
@@ -19,12 +19,10 @@ const Navbar = () => {
   return (
     <>
       <header className="w-full fixed top-0 left-0 right-0  container mx-auto text-xl ">
-        <nav className={`py-4  bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
+        <nav className={`py-4  bg-[#F6F3E9] ${isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""}`}>
           <div className="flex items-center justify-between">
             <div className="text-black font-bold text-lg cursor-pointer">
-              <Link href="/">
-                <Image src={Logo} alt="" className="w-12" />
-              </Link>
+              <Link href="/">Daniel Nygaard</Link>
             </div>
 
             {/* for larger device */}
@@ -38,7 +36,7 @@ const Navbar = () => {
             </div>
 
             {/* contact me btn */}
-            <ThemeToggler />
+            {/* <ThemeToggler /> */}
 
             {/* btn for small devices */}
             <button onClick={toggleMenu} className="lg:hidden text-black text-3xl">

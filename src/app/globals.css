@@ -1,15 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
 @layer base {
   :root {
     /* Light color scheme */
+/* 
     --color-bkg: 255, 255, 255;
     --color-content: 0, 0, 0;
   }
 
   /* Dark color scheme */
+/* 
   @media (prefer-color-scheme: dark) {
     :root {
       --color-bkg: 13, 36, 56;
@@ -21,6 +24,7 @@
     --color-content: 0, 0, 0;
   }
 }
+ */
 
 h1 {
   font-size: 2.5rem;
@@ -39,4 +43,9 @@ h3 {
 
 p {
   font-size: 1.3rem;
+}
+
+body {
+  background-color: #f6f3e9;
+  font-family: "Azeret Mono", monospace;
 }
