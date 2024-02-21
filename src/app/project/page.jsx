@@ -10,7 +10,7 @@ function about() {
         <title>About me</title>
       </Head>
       <Navbar />
-      <section className="pt-72">
+      <section className="pt-36">
         <Projects />
       </section>
     </>

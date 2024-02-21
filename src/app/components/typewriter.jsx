@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const words = ["Hello!", "My name is Daniel.", "i'm a multimediadesigner and developer", "This is my portfolio."];
+const words = ["Hello!", "I'm Daniel.", "a multimediadesigner and developer", "This is my portfolio."];
 
 export default function Typewriter() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
