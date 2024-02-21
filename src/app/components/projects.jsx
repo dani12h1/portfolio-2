@@ -22,11 +22,11 @@ function projects() {
           <Image className="object-cover " src={ciff} width={500} height={500} alt="Picture of workers" />
         </a>
         <a href="/projects/2" className="mx-auto">
-          <p className="p-3 text-base">2 / EDC - FIND A BUYER</p>
+          <p className="p-3 text-base">3 / EDC - FIND A BUYER</p>
           <Image className="object-cover  " src={edc} width={500} height={500} alt="Picture of workers" />
         </a>
         <a href="/projects/4" className=" mx-auto">
-          <p className="p-3 text-base">2 / DASHBOARD CIFF</p>
+          <p className="p-3 text-base">4 / DASHBOARD CIFF</p>
           <Image className="object-cover " src={dashboard} width={500} height={500} alt="Picture of workers" />
         </a>
       </section>
