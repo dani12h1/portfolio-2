@@ -11,7 +11,6 @@ export default function Home() {
       <body className="">
         <Navbar />
         <HeroSection />
-        <Projects />
         <Footer />
       </body>
     </>

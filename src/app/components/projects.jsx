@@ -1,44 +1,36 @@
 import React from "react";
 import Image from "next/image";
-import ciff from "../assets/ciff2.png";
-import hogwarts from "../assets/hackgrid.png";
-import edc from "../assets/edc2.png";
-import dashboard from "../assets/dashboard2.png";
+import ciff from "../assets/ciff3.png";
+import edc from "../assets/edc.png";
+import dashboard from "../assets/dashboard.png";
+import test from "../assets/hogwarts.png";
+import { motion } from "framer-motion";
+import AnimationEffect from "./AnimationEffect";
 
 function projects() {
   return (
     <>
-      <h2 className="font-bold mx-auto text-center pb-4  text-sort text-3xl">Projects Portfolio</h2>
+      {/* <AnimationEffect delay={0.3}> */}
+      <h2 className="font-bold mx-auto pb-4  container text-sort text-3xl">Projects</h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 gap-5 container mx-auto mb-10">
-        <a href="/projects/1" className="shadow-2xl rounded-lg mx-auto">
-          <Image className=" object-cover rounded-lg mx-auto" src={hogwarts} width={500} height={500} alt="Picture of workers" />
-          <div className="p-6 text-center">
-            <h3 className="font-extrabold text-center">Hogwarts Student list</h3>
-            <p className="text-[1.1rem]">Case</p>
-          </div>
+        <a href="/projects/1" className=" mx-auto">
+          <p className="p-3">1 / HOGWARTS STUDENT LIST</p>
+          <Image className=" object-cover  mx-auto " src={test} width={500} height={500} alt="Picture of workers" />
         </a>
-        <a href="/projects/3" className="shadow-2xl rounded-lg mx-auto">
-          <Image className="object-cover rounded-lg" src={ciff} width={500} height={500} alt="Picture of workers" />
-          <div className="p-6 text-center">
-            <h3 className="font-extrabold">Copenhagen Fashion Fair</h3>
-            <p className="text-[1.1rem]">Registration form</p>
-          </div>
+        <a href="/projects/3" className=" mx-auto">
+          <p className="p-3">2 / COPENHAGEN FASHION FAIR</p>
+          <Image className="object-cover " src={ciff} width={500} height={500} alt="Picture of workers" />
         </a>
-        <a href="/projects/2" className="shadow-2xl rounded-lg mx-auto">
-          <Image className="object-cover rounded-lg " src={edc} width={500} height={500} alt="Picture of workers" />
-          <div className="p-6 text-center">
-            <h3 className="font-extrabold">EDC - Find a buyer</h3>
-            <p className="text-[1.1rem]">Case</p>
-          </div>
+        <a href="/projects/2" className="mx-auto">
+          <p className="p-3">2 / EDC - FIND A BUYER</p>
+          <Image className="object-cover  " src={edc} width={500} height={500} alt="Picture of workers" />
         </a>
-        <a href="/projects/4" className="shadow-2xl rounded-lg mx-auto">
-          <Image className="object-cover rounded-lg" src={dashboard} width={500} height={500} alt="Picture of workers" />
-          <div className="p-6 text-center ">
-            <h3 className="font-extrabold">Dashboard CIFF</h3>
-            <p className="text-[1.1rem]">Data Visualization</p>
-          </div>
+        <a href="/projects/4" className=" mx-auto">
+          <p className="p-3">2 / DASHBOARD CIFF</p>
+          <Image className="object-cover " src={dashboard} width={500} height={500} alt="Picture of workers" />
         </a>
       </section>
+      {/* </AnimationEffect> */}
     </>
   );
 }
