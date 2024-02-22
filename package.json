@@ -11,12 +11,15 @@
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-toast": "^1.1.5",
+    "clsx": "^2.1.0",
     "framer-motion": "^11.0.5",
     "next": "14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-live-clock": "^6.1.19"
+    "react-live-clock": "^6.1.19",
+    "react-medium-image-zoom": "^5.1.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

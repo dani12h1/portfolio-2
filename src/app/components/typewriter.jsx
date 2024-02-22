@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const words = ["Hello!", "I'm Daniel.", "a multimediadesigner and developer", "This is my portfolio."];
+const words = ["Hello!", "I'm Daniel.", "a multimedia-designer & developer. ", "This is my portfolio."];
 
 export default function Typewriter() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -38,7 +38,7 @@ export default function Typewriter() {
 
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <h1 id="typewriter" className="text-4xl lg:text-6xl  font-bold">
+      <h1 id="typewriter" className="text-3xl md:text-4xl lg:text-6xl  font-bold">
         {currentText}
       </h1>
     </div>

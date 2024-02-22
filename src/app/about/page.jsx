@@ -12,9 +12,9 @@ function about() {
         <title>About me</title>
       </Head>
       <Navbar />
-      <section className="mt-72 container mx-auto">
-        <div className="lg:flex gap-36 justify-center ">
-          <Image className="pb-10" src={me} alt="" width={350} height={300} />
+      <section className="mt-36 container mx-auto">
+        <div className="lg:flex gap-36 justify-center items-center ">
+          <Image className=" flex " src={me} alt="" width={350} height={300} />
           <p>
             Hi i&apos;m Daniel, a multimediadesigner dedicated to creating fun and innovative digital solutions.<br></br>
             <br></br>

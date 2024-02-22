@@ -18,7 +18,7 @@ function projects() {
           <Image className=" object-cover  mx-auto " src={test} width={500} height={500} alt="Picture of workers" />
         </a>
         <a href="/projects/3" className=" mx-auto">
-          <p className="p-3 text-base">2 / COPENHAGEN FASHION FAIR</p>
+          <p className="p-3 text-base">2 / CIFF</p>
           <Image className="object-cover " src={ciff} width={500} height={500} alt="Picture of workers" />
         </a>
         <a href="/projects/2" className="mx-auto">
