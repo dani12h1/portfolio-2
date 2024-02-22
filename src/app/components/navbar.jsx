@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,20 +36,27 @@ const Navbar = () => {
             </div>
 
             {/* btn for small devices */}
-            <button onClick={toggleMenu} className="lg:hidden text-black text-3xl">
-              <HiMenu />
+            <button onClick={toggleMenu} className="lg:hidden text-black text-4xl">
+              {isMenuOpen ? <IoMdClose /> : <HiMenu />}
             </button>
           </div>
 
           {/* Mobile menu */}
-          {isMenuOpen && (
-            <div className="mt-4 bg-body p-4 rounded-lg text-black">
-              <a className="block py-2 px-4 cursor-pointer text-black">About me</a>
-              <a href="https://www.linkedin.com/in/danielnygaardc/" className="block py-2 px-4 cursor-pointer text-black">
-                Linkedin
-              </a>
-            </div>
-          )}
+          <AnimatePresence>
+            {isMenuOpen && (
+              <motion.div className="fixed top-0 left-0 bottom-0 w-3/4 md:w-2/4 md:text-4xl bg-black z-50 overflow-y-auto" initial={{ x: "-100%" }} animate={{ x: 0 }} exit={{ x: "-100%" }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+                <div className="h-full flex flex-col justify-center">
+                  <a className="block py-2 px-4 cursor-pointer text-white">About me</a>
+                  <a href="/project" className="block text-white py-2 px-4 cursor-pointer">
+                    Projects
+                  </a>
+                  <a href="https://www.linkedin.com/in/danielnygaardc/" className="block py-2 px-4 cursor-pointer text-white">
+                    Linkedin
+                  </a>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </nav>
       </header>
     </>
