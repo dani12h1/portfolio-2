@@ -64,10 +64,21 @@ export default function ProjectList({ params }) {
 
             <div className="lg:grid grid-cols-3 gap-8">
               <div className="col-span-1 ">
-                <h3 className="text-xl">Website</h3>
-                <a href={content.website} className="hover:text-lilla text-lg  hover:text-gray-400">
-                  {content.alt}
-                </a>
+                <div className="flex flex-col">
+                  <h3 className="text-xl ">Website</h3>
+                  <a href={content.website} className="hover:text-lilla text-lg  hover:text-gray-400">
+                    {content.alt}
+                  </a>
+                  <a href={content.website2} className="hover:text-lilla text-lg  hover:text-gray-400">
+                    {content.alt2}
+                  </a>
+                  <a href={content.website3} className="hover:text-lilla text-lg  hover:text-gray-400">
+                    {content.alt3}
+                  </a>
+                  <a href={content.website4} className="hover:text-lilla text-lg  hover:text-gray-400">
+                    {content.alt4}
+                  </a>
+                </div>
                 <h3 className="pt-4 text-xl">Tools & Technologies</h3>
                 <div className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (

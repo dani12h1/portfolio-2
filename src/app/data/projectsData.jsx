@@ -79,7 +79,14 @@ export const projectsData = [
       tags: "Design / Web Application",
       text: " As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page. The registration form includes dynamic routing setup with four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right information for each type of attendee.",
       website: "https://ciff.strom.works/registration/buyer",
-      alt: "CIFF website",
+      alt: "CIFF website buyer",
+      website2: "https://ciff.strom.works/registration/press",
+      alt2: "CIFF website press",
+      website3: "https://ciff.strom.works/registration/exhibitor",
+      alt3: "CIFF website exhibitor",
+      website4: "https://ciff.strom.works/registration/visitor",
+      alt4: "CIFF website visitor",
+
       technologies: [
         {
           techs: ["Typescript, Next.js, Figma, API"],
