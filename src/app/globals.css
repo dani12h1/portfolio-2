@@ -30,23 +30,27 @@ h1 {
   font-size: 2.5rem;
   font-weight: 300;
   font-family: "Azeret Mono", monospace;
+  color: #010103;
 }
 
 h2 {
   font-weight: 100;
   font-size: 1.4rem;
   font-family: "Azeret Mono", monospace;
+  color: #010103;
 }
 
 h3 {
   font-weight: 600;
   font-size: 1.1rem;
   font-family: "Azeret Mono", monospace;
+  color: #010103;
 }
 
 p {
   font-size: 1.2rem;
   font-family: "Azeret Mono", monospace;
+  color: #010103;
 }
 
 body {

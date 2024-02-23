@@ -5,6 +5,7 @@ import { projectsData } from "../../data/projectsData";
 import Image from "next/image";
 import Navbar from "@/app/components/navbar";
 import ToastDemo from "@/app/components/Toaster";
+import AnimationEffect from "@/app/components/AnimationEffect";
 import Head from "next/head";
 import Zoom from "react-medium-image-zoom";
 
@@ -28,6 +29,7 @@ export default function ProjectList({ params }) {
       <div className="flex container mx-auto pt-36 mb-10">
         <section>
           <h1 className="pb-4 ">{content.heading}</h1>
+
           <div className="flex self-center lg:gap-6 gap-3 pb-10">
             {/* Clock icon and publish date */}
             <div className="flex items-center gap-2">
@@ -46,33 +48,35 @@ export default function ProjectList({ params }) {
               <div>{content.tags}</div>
             </div>
           </div>
-          <div className="flex flex-col md:gap-4 lg:gap-8 gap-6 pb-14 lg:flex-row lg:mx-auto">
-            {/* Render images */}
-            <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto" src={content.image1.src} alt="Project" />
-            <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
-            <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
-          </div>
+          <AnimationEffect delay={0.2}>
+            <div className="flex flex-col md:gap-4 lg:gap-8 gap-6 pb-14 lg:flex-row lg:mx-auto">
+              {/* Render images */}
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto" src={content.image1.src} alt="Project" />
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
+              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
+            </div>
 
-          <div className="lg:grid grid-cols-3 gap-8">
-            <div className="col-span-1 ">
-              <h3 className="text-xl">Website</h3>
-              <a href={content.website} className="hover:text-lilla text-lg  hover:text-gray-400">
-                {content.alt}
-              </a>
-              <h3 className="pt-4 text-xl">Tools & Technologies</h3>
-              <div className="pb-4">
-                {content.technologies[0].techs.map((tech, index) => (
-                  <p className="text-lg" key={index}>
-                    {tech}
-                  </p>
-                ))}
+            <div className="lg:grid grid-cols-3 gap-8">
+              <div className="col-span-1 ">
+                <h3 className="text-xl">Website</h3>
+                <a href={content.website} className="hover:text-lilla text-lg  hover:text-gray-400">
+                  {content.alt}
+                </a>
+                <h3 className="pt-4 text-xl">Tools & Technologies</h3>
+                <div className="pb-4">
+                  {content.technologies[0].techs.map((tech, index) => (
+                    <p className="text-lg" key={index}>
+                      {tech}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="col-span-2">
+                <h3 className=" text-2xl">About the project</h3>
+                <p dangerouslySetInnerHTML={{ __html: content.text }} />
               </div>
             </div>
-            <div className="col-span-2">
-              <h3 className=" text-2xl">About the project</h3>
-              <p dangerouslySetInnerHTML={{ __html: content.text }} />
-            </div>
-          </div>
+          </AnimationEffect>
         </section>
       </div>
       {/* <Footer /> */}

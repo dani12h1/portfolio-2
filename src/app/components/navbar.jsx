@@ -18,7 +18,7 @@ const Navbar = () => {
       <header className="w-full top-0 left-0 right-0  container mx-auto text-xl">
         <nav className={`py-4 bg-[#F6F3E9]`}>
           <div className="flex items-center justify-between">
-            <div className="text-black font-bold text-lg cursor-pointer">
+            <div className="text-black font-bold text-[1.5rem] cursor-pointer">
               <Link href="/">DANIEL NYGAARD</Link>
             </div>
 
