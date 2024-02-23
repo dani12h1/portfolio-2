@@ -15,10 +15,10 @@ function about() {
       <Navbar />
 
       <AnimationEffect delay={0.2}>
-        <section className="mt-36 container mx-auto">
+        <section className="mt-24 lg:mt-36 container mx-auto">
           <div className="lg:flex gap-36 justify-center items-center ">
             <Image className=" flex " src={me} alt="" width={350} height={300} />
-            <p>
+            <p className="lg:mt-0 mt-12 lg:mb-0 mb-12">
               Hi i&apos;m Daniel, a multimediadesigner dedicated to creating fun and innovative digital solutions.<br></br>
               <br></br>
               Through this portfolio, I invite you to explore my work and discover the different projects I&apos;ve had the privilege to be a part of. Thank you for visiting, and I look forward to the opportunity to collaborate and create something truly extraordinary together.

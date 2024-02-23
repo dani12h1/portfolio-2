@@ -8,6 +8,7 @@ import ToastDemo from "@/app/components/Toaster";
 import AnimationEffect from "@/app/components/AnimationEffect";
 import Head from "next/head";
 import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export default function ProjectList({ params }) {
   // Find the project with the matching id from params
@@ -26,7 +27,7 @@ export default function ProjectList({ params }) {
         <title>{content.alt}</title>
       </Head>
       <Navbar />
-      <div className="flex container mx-auto pt-36 mb-10">
+      <div className="flex container mx-auto mt-24 lg:mt-36 mb-10">
         <section>
           <h1 className="pb-4 ">{content.heading}</h1>
 
@@ -50,10 +51,15 @@ export default function ProjectList({ params }) {
           </div>
           <AnimationEffect delay={0.2}>
             <div className="flex flex-col md:gap-4 lg:gap-8 gap-6 pb-14 lg:flex-row lg:mx-auto">
-              {/* Render images */}
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto" src={content.image1.src} alt="Project" />
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
-              <Image className="rounded-xl lg:w-[32%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
+              <Zoom>
+                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto" src={content.image1.src} alt="Project" />
+              </Zoom>
+              <Zoom>
+                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
+              </Zoom>
+              <Zoom>
+                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
+              </Zoom>
             </div>
 
             <div className="lg:grid grid-cols-3 gap-8">

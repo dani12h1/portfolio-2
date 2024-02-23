@@ -12,7 +12,7 @@ import AnimationEffect from "./AnimationEffect";
 function projects() {
   return (
     <>
-      <h2 className="font-bold mx-auto pb-4  container text-sort text-6xl">PROJECTS</h2>
+      <h2 className="font-bold mx-auto pb-4 container">PROJECTS</h2>
       <AnimationEffect delay={0.2}>
         <motion.section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 gap-5 container mx-auto mb-10">
           <a href="/projects/1" className=" mx-auto">

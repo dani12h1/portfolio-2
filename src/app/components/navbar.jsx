@@ -46,7 +46,9 @@ const Navbar = () => {
             {isMenuOpen && (
               <motion.div className="fixed top-0 left-0 bottom-0 w-3/4 md:w-2/4 md:text-4xl bg-black z-50 overflow-y-auto" initial={{ x: "-100%" }} animate={{ x: 0 }} exit={{ x: "-100%" }} transition={{ duration: 0.3, ease: "easeInOut" }}>
                 <div className="h-full flex flex-col justify-center">
-                  <a className="block py-2 px-4 cursor-pointer text-white">About me</a>
+                  <a href="/about" className="block py-2 px-4 cursor-pointer text-white">
+                    About me
+                  </a>
                   <a href="/project" className="block text-white py-2 px-4 cursor-pointer">
                     Projects
                   </a>
