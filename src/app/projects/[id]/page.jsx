@@ -82,13 +82,13 @@ export default function ProjectList({ params }) {
                 <h3 className="pt-4 text-xl">Tools & Technologies</h3>
                 <div className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (
-                    <p className="text-lg" key={index}>
+                    <p className="" key={index}>
                       {tech}
                     </p>
                   ))}
                 </div>
               </div>
-              <div className="col-span-2">
+              <div className="col-span-2 mt-8 lg:mt-0">
                 <h3 className=" text-2xl">About the project</h3>
                 <p dangerouslySetInnerHTML={{ __html: content.text }} />
               </div>
