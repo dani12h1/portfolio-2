@@ -20,7 +20,7 @@ const Toaster = () => {
         {open && (
           <Toast.Root open={open} onOpenChange={setOpen} duration={5000} className={clsx("justify-between p-4 gap-3 border-solid border-2  flex min-w-min h-14  bg-white border-black text-black")}>
             <Toast.Description className="flex justify-center items-center text-sm">
-              <p>Click on the images to enlarge</p>
+              <p>Click on the images to zoom</p>
             </Toast.Description>
             <Toast.Action asChild altText="Close">
               <button className="text-sm" onClick={() => setOpen(false)}>
