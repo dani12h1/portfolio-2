@@ -28,7 +28,7 @@ export const projectsData = [
       alt: "Hogwarts Student List",
       technologies: [
         {
-          techs: ["HTML, CSS, JavaScript, AdobeXD"],
+          techs: ["HTML, CSS, JavaScript, AdobeXD, Design"],
         },
       ],
 

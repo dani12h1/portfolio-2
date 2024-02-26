@@ -31,9 +31,7 @@ function Projects() {
       <AnimationEffect delay={0.2}>
         <motion.section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 gap-5 container mx-auto mb-10">
           <a href="/projects/1" className=" mx-auto" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>
-            <motion.p whileHover={{ y: [0, -20] }} transition={{ duration: 0.5 }} className="py-3 text-sm">
-              {projectText(0, "1 / HOGWARTS STUDENT LIST")}
-            </motion.p>
+            <motion.p className="py-3 text-sm">{projectText(0, "1 / HOGWARTS STUDENT LIST")}</motion.p>
             <Image className=" object-cover  mx-auto" src={test} width={500} height={500} alt="Picture of workers" />
           </a>
           <a href="/projects/3" className=" mx-auto" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
