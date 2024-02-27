@@ -77,7 +77,7 @@ export const projectsData = [
       heading: "Copenhagen International Fashion Fair",
       publishDate: "Nov, 2023",
       tags: "Design / Web Application",
-      text: " As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page. The registration form includes dynamic routing setup with four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right information for each type of attendee.",
+      text: " As a part of Copenhagen International Fashion Fair, i was tasked to make a Registration Page. <br><br> The registration form includes dynamic routing setup with four distinct registration forms for buyers, press, visitors, and exhibitors. Each form tailored to gather the right information for each type of attendee.",
       website: "https://ciff.strom.works/registration/buyer",
       alt: "CIFF website buyer",
       website2: "https://ciff.strom.works/registration/press",
@@ -111,7 +111,7 @@ export const projectsData = [
       heading: "CIFF Dashboard",
       publishDate: "Aug, 2022",
       tags: "Web Application",
-      text: "Internal dashboard with data visualization for Copenhagen International Fashion Fair. The dashboard incluces: Map overview, ticket overview, check-in overview, data from different seasons and more. ",
+      text: "The dashboard encompasses a comprehensive array of features designed to cater to the diverse needs of managing a large-scale event like the Copenhagen International Fashion Fair. <br> <br> <b> <b>These features include: <br>  Map Overview:</b> An interactive map interface with a visual overview of the stands. <br>  <b> <b> Ticket Overview:</b></b> Monitoring ticket sales, attendee demographics, and other information for understanding attendee profiles. <br><b><b>Check-in Overview:</b></b> Real-time tracking of attendee check-ins to facilitate smooth entry management and crowd control during the event. <br><b>Ticket Management: </b> A system for managing tickets and resolving ticket-related issues.<br><b> Data Visualization:</b> Dynamic charts and analytics tools that provide insights of the amount of check-ins. <br><b>Comparable Data from Different Seasons:</b> Historical data comparison that enables organizers to identify patterns, trends and amount of visitor across different editions of the fashion fair. <br><b>Communication Channels:</b> Integration with email, SMS, and dedicated app-based communication channels for disseminating important updates, announcements, and promotional messages to visitors and exhibitors.",
       website: "",
       alt: "No website - internal infomation",
       technologies: [
