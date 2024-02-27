@@ -23,7 +23,7 @@ export default function Typewriter() {
         setCurrentIndex((prevIndex) => prevIndex + 1);
         if (currentIndex === currentWord.length) {
           if (currentWordIndex === words.length - 1) {
-            // Stop the typewriter effect if it's the last word
+            // Stop typewriter sidste ord
             return;
           }
           setIsDeleting(true);

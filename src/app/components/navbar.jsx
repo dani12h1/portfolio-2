@@ -18,19 +18,21 @@ const Navbar = () => {
       <header className="w-full top-0 left-0 right-0  container mx-auto text-xl">
         <nav className={`py-4 bg-[#F6F3E9]`}>
           <motion.div className="flex items-center justify-between">
-            <div className="text-black font-bold text-[1.5rem] cursor-pointer">
-              <Link href="/">DANIEL NYGAARD</Link>
+            <div className="text-black font-bold text-[1.5rem] cursor-pointer ">
+              <Link className="text-2xl" href="/">
+                DANIEL NYGAARD
+              </Link>
             </div>
 
             {/* for larger device */}
-            <motion.div className="lg:flex items-center gap-3 hidden text-body">
-              <a href="/about" className="block text-black hover:text-gray-400 py-2 px-4 cursor-pointer">
+            <motion.div className="lg:flex items-center gap-3 hidden text-body ">
+              <a href="/about" className="block text-black hover:text-gray-400 py-2 px-4 cursor-pointer text-xl">
                 About me
               </a>
-              <a href="/project" className="block text-black hover:text-gray-400 py-2 px-4 cursor-pointer">
+              <a href="/project" className="block text-black hover:text-gray-400 py-2 px-4 cursor-pointer text-xl">
                 Projects
               </a>
-              <a href="https://www.linkedin.com/in/danielnygaardc/" className="block py-2 px-4 cursor-pointer text-black hover:text-gray-400">
+              <a href="https://www.linkedin.com/in/danielnygaardc/" className="block py-2 px-4 cursor-pointer text-xl text-black hover:text-gray-400">
                 Linkedin
               </a>
             </motion.div>

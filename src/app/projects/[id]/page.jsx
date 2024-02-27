@@ -66,23 +66,23 @@ export default function ProjectList({ params }) {
               <div className="col-span-1 ">
                 <div className="flex flex-col">
                   <h3 className="text-xl ">Website</h3>
-                  <a href={content.website} className="hover:text-lilla text-lg  hover:text-gray-400">
+                  <a href={content.website} className="hover:text-lilla  hover:text-gray-400">
                     {content.alt}
                   </a>
-                  <a href={content.website2} className="hover:text-lilla text-lg  hover:text-gray-400">
+                  <a href={content.website2} className="hover:text-lilla  hover:text-gray-400">
                     {content.alt2}
                   </a>
-                  <a href={content.website3} className="hover:text-lilla text-lg  hover:text-gray-400">
+                  <a href={content.website3} className="hover:text-lilla  hover:text-gray-400">
                     {content.alt3}
                   </a>
-                  <a href={content.website4} className="hover:text-lilla text-lg  hover:text-gray-400">
+                  <a href={content.website4} className="hover:text-lilla  hover:text-gray-400">
                     {content.alt4}
                   </a>
                 </div>
                 <h3 className="pt-4 text-xl">Tools & Technologies</h3>
                 <div className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (
-                    <p className="" key={index}>
+                    <p className="pb-18" key={index}>
                       {tech}
                     </p>
                   ))}

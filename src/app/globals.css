@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   font-family: "Azeret Mono", monospace;
   color: #010103;
 }
@@ -60,6 +60,7 @@ body {
 
 a {
   font-family: "Azeret Mono", monospace;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
 
 button {
