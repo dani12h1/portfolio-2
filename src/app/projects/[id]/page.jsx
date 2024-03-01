@@ -16,7 +16,11 @@ export default function ProjectList({ params }) {
 
   // If id is not found:
   if (!selectedProject) {
-    return <div>Project not found</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="text-center text-xl">Project not found</div>
+      </div>
+    );
   }
 
   const { content } = selectedProject;
@@ -27,6 +31,7 @@ export default function ProjectList({ params }) {
         <title>{content.alt}</title>
       </Head>
       <Navbar />
+      {/* Add back to projects button*/}
       <div className="flex container mx-auto mt-24 lg:mt-36 mb-10">
         <section>
           <h1 className="pb-4 ">{content.heading}</h1>
@@ -55,10 +60,10 @@ export default function ProjectList({ params }) {
                 <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto" src={content.image1.src} alt="Project" />
               </Zoom>
               <Zoom>
-                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto " src={content.image2.src} alt="Project" />
+                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto" src={content.image2.src} alt="Project" />
               </Zoom>
               <Zoom>
-                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto " src={content.image3.src} alt="Project" />
+                <Image width="1100" className="rounded-xl lg:w-[100%] w-[100%] h-auto" src={content.image3.src} alt="Project" />
               </Zoom>
             </div>
 
@@ -79,6 +84,7 @@ export default function ProjectList({ params }) {
                     {content.alt4}
                   </a>
                 </div>
+                {/* Is this necessary? */}
                 <h3 className="pt-4 text-xl">Tools & Technologies</h3>
                 <div className="pb-4">
                   {content.technologies[0].techs.map((tech, index) => (
