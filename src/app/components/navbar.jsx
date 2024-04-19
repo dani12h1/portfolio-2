@@ -5,6 +5,8 @@ import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import logo from "../assets/logo.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +23,7 @@ const Navbar = () => {
             <div className="text-black font-bold text-[1.5rem] cursor-pointer ">
               <Link className="text-2xl" href="/">
                 DANIEL NYGAARD
+                {/* <Image src={logo} alt="logo"></Image> */}
               </Link>
             </div>
 
