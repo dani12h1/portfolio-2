@@ -4,9 +4,12 @@ import React, { useState, useEffect, useRef } from "react";
 function Video() {
   const [isVolumeClicked, setVolumeClicked] = useState(false);
   const [isPlayClicked, setPlayClicked] = useState(false);
+  const [isScreenClicked, setScreenClicked] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [videoDuration, setVideoDuration] = useState(0);
+  const [isFullScreen, setFullScreen] = useState(false);
   const videoRef = useRef(null);
+
   const progressBarWidth = (currentTime / videoDuration) * 100 || 0;
 
   useEffect(() => {
@@ -53,6 +56,10 @@ function Video() {
     if (video) {
       video.currentTime -= 15;
     }
+  };
+
+  const screenSize = () => {
+    setIsLarge(!isLarge);
   };
 
   return (
@@ -106,10 +113,24 @@ function Video() {
                 <p className="text-white text-xs mt-2 select-none">lydstyrke</p>
               </div>
             </div>
+            <div className="flex flex-col p-6 items-center justify-center ">
+              {isScreenClicked ? (
+                <svg onClick={screenSize} className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fullscreen-exit" viewBox="0 0 16 16">
+                  <path d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z" />
+                </svg>
+              ) : (
+                <svg onClick={screenSize} className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+                  <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                </svg>
+              )}
+            </div>
           </div>
         </div>
-
-        <div className="h-2 w-[90%] bg-red-500 absolute top-[85%] left-[5%] mt-3" style={{ width: `${progressBarWidth}%` }}></div>
+        {/* Tilføj før/efter progress bar  */}
+        <div className="relative top-[85%] left-[5%]">
+          <div className="h-2 w-[90%] bg-red-500  mt-3 absolute z-20" style={{ width: `${progressBarWidth}%` }}></div>
+          <div className="h-2 w-[90%] bg-slate-600  mt-3 absolute z-10"></div>
+        </div>
       </div>
     </>
   );
