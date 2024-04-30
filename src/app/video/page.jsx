@@ -5,16 +5,23 @@ function Video() {
   const [isVolumeClicked, setVolumeClicked] = useState(false);
   const [isPlayClicked, setPlayClicked] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
+  const [videoDuration, setVideoDuration] = useState(0);
   const videoRef = useRef(null);
+  const progressBarWidth = (currentTime / videoDuration) * 100 || 0;
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (videoRef.current) {
-        setCurrentTime(videoRef.current.currentTime);
-      }
-    }, 1000);
-    return () => clearInterval(interval);
-  });
+    const video = videoRef.current;
+
+    const updateTime = () => {
+      setCurrentTime(video.currentTime);
+      setVideoDuration(video.duration);
+    };
+
+    if (video) {
+      video.addEventListener("timeupdate", updateTime);
+      return () => video.removeEventListener("timeupdate", updateTime);
+    }
+  }, []);
 
   const toggleMute = () => {
     const video = videoRef.current;
@@ -32,6 +39,20 @@ function Video() {
       video.pause();
     }
     setPlayClicked(!isPlayClicked);
+  };
+
+  const skipForward = () => {
+    const video = videoRef.current;
+    if (video) {
+      video.currentTime += 15;
+    }
+  };
+
+  const skipBackward = () => {
+    const video = videoRef.current;
+    if (video) {
+      video.currentTime -= 15;
+    }
   };
 
   return (
@@ -58,14 +79,14 @@ function Video() {
 
             <div className="flex pl-8">
               <div className="flex flex-col p-6 items-center justify-center">
-                <svg className="cursor-pointer mb-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
+                <svg onClick={skipBackward} className="cursor-pointer mb-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
                   <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z" />
                 </svg>
                 <p className="text-white text-xs select-none">15 sek tilbage</p>
               </div>
 
               <div className="flex flex-col p-6  items-center justify-center ">
-                <svg className="cursor-pointer mb-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                <svg onClick={skipForward} className="cursor-pointer mb-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
                   <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z" />
                 </svg>
                 <p className="text-white text-xs select-none">15 sek frem</p>
@@ -88,7 +109,7 @@ function Video() {
           </div>
         </div>
 
-        <div className="h-2 w-[90%] bg-red-500 absolute top-[85%] left-[5%] mt-3 "></div>
+        <div className="h-2 w-[90%] bg-red-500 absolute top-[85%] left-[5%] mt-3" style={{ width: `${progressBarWidth}%` }}></div>
       </div>
     </>
   );
