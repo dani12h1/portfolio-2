@@ -126,7 +126,7 @@ function Video() {
             </div>
           </div>
         </div>
-        {/* Tilføj før/efter progress bar  */}
+
         <div className="relative top-[85%] left-[5%]">
           <div className="h-2 w-[90%] bg-red-500  mt-3 absolute z-20" style={{ width: `${progressBarWidth}%` }}></div>
           <div className="h-2 w-[90%] bg-slate-600  mt-3 absolute z-10"></div>
