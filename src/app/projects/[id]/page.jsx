@@ -94,7 +94,7 @@ export default function ProjectList({ params }) {
                   ))}
                 </div>
               </div>
-              <div className="col-span-2 mt-8 lg:mt-0">
+              <div className="col-span-2 mt-8 lg:mt-0 mb-48">
                 <h3 className=" text-2xl">About the project</h3>
                 <p dangerouslySetInnerHTML={{ __html: content.text }} />
               </div>
